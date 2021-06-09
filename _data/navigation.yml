@@ -1,0 +1,23 @@
+# main links
+main:
+
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+
+sidebar-researchers:
+  - title: "quick start guide"
+    children:
+      - title: "Login in to the Intembeko ORCID Hub"
+        url: /hub/researchers-login  
+ 
+      - title: "Linking your ORCID record"
+        url: /hub/researchers-linking
+    
+  
