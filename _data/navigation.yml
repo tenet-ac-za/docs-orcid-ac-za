@@ -15,9 +15,16 @@ sidebar-researchers:
   - title: "quick start guide"
     children:
       - title: "Login in to the Intembeko ORCID Hub"
-        url: /hub/researchers-login  
+        url: /hub/researchers/login  
  
       - title: "Linking your ORCID record"
-        url: /hub/researchers-linking
+        url: /hub/researchers/linking
     
   
+sidebar-institutions:
+  - title: "quick start guide"
+    children:
+      - title: "Writing affiliation items"
+        url: /hub/institutions/writing
+
+     
