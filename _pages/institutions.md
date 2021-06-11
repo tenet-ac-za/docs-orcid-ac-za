@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: {{ institutions }}
+permalink: /hub/institutions
 
 
 sidebar:
