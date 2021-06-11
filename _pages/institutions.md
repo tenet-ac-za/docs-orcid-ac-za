@@ -9,6 +9,9 @@ sidebar:
 
 ---
 
+
+_(Draft) NB: This is a working document and information on the page is being updated regularly. Expect some errors while we are updating this page_
+
 This guide covers the use of the Intembeko ORCID Hub by organisations to assert employment and
 education affiliations in ORCID records. Subsequent guides will cover funding, works and peer review,
 with an additional guide for use of the Hub’s API.
