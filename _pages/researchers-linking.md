@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /hub/researchers-linking
+permalink: /hub/researchers/linking
 
 
 
