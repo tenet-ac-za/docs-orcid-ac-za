@@ -148,3 +148,7 @@ defaults:
     values:
       layout: single
       author_profile: false
+
+
+#permalinks paths
+institutions: /hub/institutions
