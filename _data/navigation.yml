@@ -29,8 +29,17 @@ sidebar-institutions:
 
      
 
-sidebar-institutions:
+sidebar-hubmanual:
   - title: "Hub manual"
     children:
-      - title: "Intembeko Hub operations"
-        url: /hub/manual
+      - title: "Adding ORCID API keys"
+        url: /hub/manual/orcidapi
+
+      - title: "Adding Affiliation"
+        url: /hub/manual/affiliation
+
+      - title: "Collect authentication ORCID records"
+        url: /hub/manual/collect
+     
+     
+
