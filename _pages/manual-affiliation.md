@@ -2,7 +2,7 @@
 layout: single
 permalink: /hub/manual/writing_affiliation_items
 
-title-heading: false
+title: false
 sidebar:
   title: "Intembeko ORCID Hub Manual"
   nav: sidebar-hubmanual
