@@ -32,14 +32,16 @@ sidebar-institutions:
 sidebar-hubmanual:
   - title: "Hub manual"
     children:
-      - title: "Adding ORCID API keys"
-        url: /hub/manual/orcidapi
+      - title: "Writing Affiliation"
+        url: /hub/manual/writing_affiliation_items
 
-      - title: "Adding Affiliation"
-        url: /hub/manual/affiliation
+      - title: "Writing Funding items"
+        url: /hub/manual/writing_funding_items
 
-      - title: "Collect authentication ORCID records"
-        url: /hub/manual/collect
+      - title: "Writing work items"
+        url: /hub/manual/writing_work_items
      
+      - title: "Writing peer review items"
+        url: /hub/manual/writing_peer_review_items
      
 

@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /hub/manual/writing_affiliation_items
+permalink: /hub/manual/writing_peer_review_items
 
 
 sidebar:
