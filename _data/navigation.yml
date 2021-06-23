@@ -28,3 +28,9 @@ sidebar-institutions:
         url: /hub/institutions/writing
 
      
+
+sidebar-institutions:
+  - title: "Hub manual"
+    children:
+      - title: "Intembeko Hub operations"
+        url: /hub/manual
