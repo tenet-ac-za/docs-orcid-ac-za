@@ -4,7 +4,6 @@ permalink: /hub/manual
 
 
 sidebar:
-  title: "Intembeko ORCID Hub Manual"
   nav: sidebar-hubmanual
 
 ---
