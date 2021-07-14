@@ -32,7 +32,7 @@ sidebar-institutions:
 sidebar-hubmanual:
   - title: "Hub manual"
     children:
-      - title: "Writing Affiliation"
+      - title: "Institutional invitation"
         url: /hub/manual/writing_affiliation_items
 
       - title: "Writing Funding items"
