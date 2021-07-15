@@ -24,15 +24,15 @@ sidebar-researchers:
 sidebar-institutions:
   - title: "quick start guide"
     children:
-      - title: "Writing affiliation items"
-        url: /hub/institutions/writing
+      - title: "Admin User Guide"
+        url: /hub/manual
 
      
 
 sidebar-hubmanual:
   - title: "Hub manual"
     children:
-      - title: "Institutional invitation"
+      - title: "Writing Affiliation Items"
         url: /hub/manual/writing_affiliation_items
 
       - title: "Writing Funding items"
