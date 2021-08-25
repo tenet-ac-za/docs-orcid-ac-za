@@ -6,7 +6,7 @@ permalink: /hub/
 ---
 
 (Draft)
-_NB: This is a working document and information on the page is being updated regularly. Expect some errors while we are updating this page_ 
+_NB: This is a working document and information on the page is being updated regularly. Expect some errors while we are updating this page.
 
 ![Intembeko Logo]({{site.baseurl}}/assets/images/saorcidhub-300x300.png )
 
