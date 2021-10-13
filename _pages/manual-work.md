@@ -54,3 +54,44 @@ recognised and listed by ORCID here.
 | Contributors (json or yaml file only, if more than one contributor to be included) | Describes the role of the contributor. Can be: author / assignee / editor / chair-or-translator / co-investigator / co-inventor / graduate-student / other-inventor / principal-investigator / postdoctoral-researcher / support-staff(Hyphens are essential)|
 | Contributor-sequence | Can be ‘first’ or ‘additional’ only|
 | PUT code | Use the PUT-Code if you wish to update an item. The code can be obtained by exporting the task from the Hub once the entry is written to the ORCID record. By writing information using a PUT code the row of information in your fileoverwrites the specified item in the user’s ORCID record rather than creating a new entry.|
+
+
+## Using the Hub to write works to ORCID records
+Uploading files and activating them in the Hub generates email to your researchers and
+contributors, inviting them to give your organisation permission to access their ORCID
+record.
+
+## Uploading files to the Hub
+If the researcher(s) have not already given you permission to read from/write to their ORCID records,
+perhaps from you writing an affiliation entry to their record, then prior to uploading and activating
+your file in the Hub, and according to your organisation’s normal communications procedures, you
+should contact them in advance to let them know that you intend to write works information to their
+ORCID records. You must explain that they will be receiving an email from the Intembe ORCID
+Hub, and the date on which you intend to upload your file. By doing this, your research community
+will be expecting the Hub’s email and be less likely to delete it as spam.
+To upload ‘works’ file to the Hub log-in and go to
+>Tasks >Upload works ...upload your file…>activate all
+This will either
+* send an invitation to those people whose ORCID records you wish to write to (Figure 5) OR
+* if the researchers have already given your organisation permission to act on their ORCID records, the
+works record will immediately be written, with your organisation as the source of the information.
+
+
+## Editing records using the Hub’s web-form feature
+You can edit information written to ORCID records in the Hub directly using the web-form features.
+Any information can be edited while the task is still active, but some edits can also be made after the
+task has expired.
+If the task is still active in the Hub, navigate to it via <Tasks>, <Uploaded Tasks> then click on the eye
+icon to view the items. Choose the item you wish to edit and click on the icon that represents that
+information e.g. invitees, contributors, external identifiers. Once you have edited the information you
+must ‘reset’ the task for the edits to appear in the records. If adding new invitees, these people will
+receive an invitation email as described previously.
+If the task has expired you can still edit some information in ORCID records about the work item,
+including url, identifiers and information about the work itself, although not contributors. Go to <Your
+People>, <view/export people> and search for the person whose information you want to edit. Hover
+over the pencil icon on the left and a suite of icons will appear/ Click on the typewriter icon to edit
+works information. When the information appears on screen, click on the pencil icon on the left to
+edit the information. 
+
+
+
