@@ -38,6 +38,7 @@ recognised and listed by ORCID here.
 | Subtitle | The subtitle, if relevant |
 | Translated title | The title as translated, if relevant |
 | Translated title language | Language of the translated title |
+
 |Journal title | This is the title of the main body that the work is 
 a part of – can be journal title, book title,
 conference title etc. Note that ALL variations are
