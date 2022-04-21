@@ -352,7 +352,7 @@ class TenetOrcidSearch
 	getInstitutions ()
 	{
 		$.ajax({
-			url: "institutions.json?_="+(new Date()).getTime(),
+			url: "/assets/js/institutions.json?_="+(new Date()).getTime(),
 			dataType: "json",
 			context: this
 		}).done(function (data) {
