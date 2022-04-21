@@ -1,0 +1,228 @@
+[
+	{
+		"name": "Tertiary Education & Research Network of South Africa",
+		"domain": "tenet.ac.za",
+		"org-id": {
+			"grid": "grid.507493.c",
+			"ror": "https://ror.org/01ymz3j33"
+		},
+		"alt" : {
+			"names": [ "TENET" ]
+		}
+	},
+	{
+		"name": "Stellenbosch University",
+		"domain": "sun.ac.za",
+		"org-id": {
+			"ringgold": "26697",
+			"grid": "grid.11956.3a",
+			"ror": "https://ror.org/05bk57929"
+		},
+		"alt" : {
+			"names": [ "Universiteit Stellenbosch" ]
+		}
+	},
+	{
+		"name": "University of Johannesburg",
+		"domain": "uj.ac.za",
+		"org-id": {
+			"ringgold": "61799",
+			"grid": "grid.412988.e",
+			"ror": "https://ror.org/04z6c2n17"
+		},
+		"alt" : {
+			"names": [ "University of Johannesburg" ]
+		}
+	},
+	{
+		"name": "Cape Peninsula University of Technology",
+		"domain": "cput.ac.za",
+		"org-id": {
+			"ringgold": "70683",
+			"grid": "grid.411921.e",
+			"ror": "https://ror.org/056e9h402"
+		},
+		"alt" : {
+			"names": [ "CPUT" ],
+			"domains": [ "mycput.ac.za" ]
+		}
+	},
+	{
+		"name": "Central University of Technology",
+		"domain": "cut.ac.za",
+		"org-id": {
+			"ringgold": "71795",
+			"grid": "grid.428369.2",
+			"ror": "https://ror.org/033z08192"
+		},
+		"alt" : {
+			"names": [ "CUT" ]
+		}
+	},
+	{
+		"name": "Durban University of Technology",
+		"domain": "dut.ac.za",
+		"org-id": {
+			"ringgold": "56391",
+			"grid": "grid.412114.3",
+			"ror": "https://ror.org/0303y7a51"
+		},
+		"alt" : {
+			"names": [ "DUT" ]
+		}
+	},
+	{
+		"name": "National Research Foundation of South Africa",
+		"domain": "nrf.ac.za",
+		"org-id": {
+			"ringgold": "61801",
+			"grid": "grid.425534.1",
+			"ror": "https://ror.org/05s0g1g46"
+		},
+		"alt" : {
+			"names": [ "NRF" ]
+		}
+	},
+	{
+		"name": "North-West University",
+		"domain": "nwu.ac.za",
+		"org-id": {
+			"ringgold": "56405",
+			"grid": "grid.25881.36",
+			"ror": "https://ror.org/010f1sq29"
+		},
+		"alt" : {
+			"names": [ "NWU" ],
+			"domains": [ "nwu.ac.za" ]
+		}
+	},
+	{
+		"name": "Rhodes University",
+		"domain": "ru.ac.za",
+		"org-id": {
+			"ringgold": "59100",
+			"grid": "grid.91354.3a",
+			"ror": "https://ror.org/016sewp10"
+		},
+		"alt" : {
+			"names": [ "Rhodes Unviversity" ],
+			"domains": [ "campus.ru.ac.za" ]
+		}
+	},
+	{
+		"name": "Tshwane University of Technology ",
+		"domain": "tut.ac.za",
+		"org-id": {
+			"ringgold": "56412",
+			"grid": "grid.412810.e",
+			"ror": "https://ror.org/037mrss42"
+		},
+		"alt" : {
+			"names": [ "TUT" ],
+			"domains": [ "tut.ac.za" ]
+		}
+	},
+	{
+		"name": "University of Cape Town",
+		"domain": "uct.ac.za",
+		"org-id": {
+			"ringgold": "37716",
+			"grid": "grid.7836.a",
+			"ror": "https://ror.org/03p74gp79"
+		},
+		"alt" : {
+			"names": [ "Universiteit Van Kaapstad" ],
+			"domains": [ "uct.ac.za" ]
+		}
+	},
+	{
+		"name": "University of KwaZulu-Natal",
+		"domain": "ukzn.ac.za",
+		"org-id": {
+			"grid": "grid.16463.36",
+			"ror": "https://ror.org/04qzfn040"
+		},
+		"alt" : {
+			"names": [ "UKZN" ],
+			"domains": [ "ukzn.ac.za" ]
+		}
+	},
+	{
+		"name": "University of Limpopo",
+		"domain": "ul.ac.za",
+		"org-id": {
+			"ringgold": "37714",
+			"grid": "grid.411732.2",
+			"ror": "https://ror.org/017p87168"
+		},
+		"alt" : {
+			"names": [ "UL" ],
+			"domains": [ "ul.ac.za" ]
+		}
+	},
+	{
+		"name": "University of Pretoria",
+		"domain": "up.ac.za",
+		"org-id": {
+			"ringgold": "56410",
+			"grid": "grid.49697.35",
+			"ror": "https://ror.org/00g0p6g84"
+		},
+		"alt" : {
+			"names": [ "UP" ],
+			"domains": [ "up.ac.za" ]
+		}
+	},
+	{
+		"name": "University of South Africa",
+		"domain": "unisa.ac.za",
+		"org-id": {
+			"ringgold": "56866",
+			"grid": "grid.412801.e",
+			"ror": "https://ror.org/048cwvf49"
+		},
+		"alt" : {
+			"names": [ "UNISA" ],
+			"domains": [ "unisa.ac.za" ]
+		}
+	},
+	{
+		"name": "University of the Free State",
+		"domain": "ufs.ac.za",
+		"org-id": {
+			"ringgold": "37702",
+			"grid": "grid.412219.d",
+			"ror": "https://ror.org/009xwd568"
+		},
+		"alt" : {
+			"names": [ "UFS" ],
+			"domains": [ "ufs.ac.za" ]
+		}
+	},
+	{
+		"name": "University of the Western Cape",
+		"domain": "ump.ac.za",
+		"org-id": {
+			"ringgold": "56390",
+			"grid": "grid.8974.2",
+			"ror": "https://ror.org/00h2vm590"
+		},
+		"alt" : {
+			"names": [ "UWC" ],
+			"domains": [ "uwc.ac.za" ]
+		}
+	},
+	{
+		"name": "University of the Witwatersrand",
+		"domain": "wits.ac.za",
+		"org-id": {
+			"ringgold": "37707",
+			"grid": "ggrid.11951.3d",
+			"ror": "https://ror.org/03rp50x72"
+		},
+		"alt" : {
+			"names": [ "WITS" ],
+			"domains": [ "wits.ac.za" ]
+		}
+	}
+]
