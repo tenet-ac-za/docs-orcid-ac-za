@@ -1,4 +1,5 @@
 ---
+title: Public ORCID Search
 layout: single
 permalink: /search
 
@@ -11,4 +12,10 @@ permalink: /search
   
 </div>
 
-<script src="/assets/js/orcid-search.js"></script>
+<script>
+$(document).ready(function() {
+ $.getScript("/assets/js/orcid-search.js");
+}).done(function() {
+  var tenetOrcidSearch = new TenetOrcidSearch();
+});
+</script>
