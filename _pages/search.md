@@ -4,10 +4,11 @@ permalink: /search
 
 
 ---
-# Public ORCID Search
 
 <div id="tenet-orcid">
 
   load here
   
 </div>
+
+<script src="/assets/js/orcid-search.js"></script>
