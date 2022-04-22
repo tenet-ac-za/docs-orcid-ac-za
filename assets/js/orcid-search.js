@@ -91,6 +91,12 @@ class TenetOrcidSearch
 		if (start === 0) {
 			this.searchResult = [];
 			$('#tenet-orcid-results').html('');
+			$('body').append(
+				'<!-- what purpose do throbbers really serve? -->' +
+				'<div id="tenet-orcid-search-throbber" style="z-index:1000;position:absolute;top:0;left:0;width:100vw;height:100vh;background:rgba(200,200,200,0.5);display:flex;justify-content:center;align-items:center;">' +
+				'<img src="//upload.wikimedia.org/wikipedia/commons/d/de/Ajax-loader.gif" style="display:block;width:32px;height:32px;margin:auto">' +
+				'</div>'
+			)
 		}
 		$.ajax({
 			method: "GET",
@@ -113,6 +119,7 @@ class TenetOrcidSearch
 					this.indexValue.obj.doSearch(this.indexValue.query, newStart, this.indexValue.passes);
 				} else{
 					this.indexValue.obj.searchQuery = this.indexValue.query;
+					$('#tenet-orcid-search-throbber').remove();
 					$('#tenet-orcid-results').html(
 						'<p>Searched for: <tt>' + this.indexValue.query + '</tt></p>' +
 						'<p>Found ' + this.indexValue.obj.searchResult.length + ' results in ' + this.indexValue.passes + ' passes.</p>'
@@ -120,11 +127,18 @@ class TenetOrcidSearch
 					this.indexValue.obj.createResultsForm(this.indexValue.obj.searchResult);
 				}
 			} else {
+				$('#tenet-orcid-search-throbber').remove();
 				$('#tenet-orcid-results').html(
 					'<p>Searched for: <tt>' + this.indexValue.query + '</tt></p>' +
 					'<p><strong>NO RESULTS RETURNED</strong></p>'
 				);
 			}
+		}).fail(function (jqXHR, textStatus, errorThrown) {
+			$('#tenet-orcid-search-throbber').remove();
+			$('#tenet-orcid-results').html(
+				'<p>An error has occured searching for: <tt>' + this.indexValue.query + '</tt></p>' +
+				'<p>Message: ' + textStatus + '</p>'
+			);
 		});
 	}
 
