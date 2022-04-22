@@ -19,6 +19,32 @@ class TenetOrcidSearch
 		return s.replace(/[+\-&|!(){}\[\]^"~*?:\/]/g, "\\$&");
 	}
 
+	previewResults(event)
+	{
+		event.preventDefault();
+		var csv = this.makeCSV(this.searchResult, 10);
+		var sample = '<samp>' + csv.replaceAll("\r",'') + '</samp>'
+
+		if ($('#tenet-orcid-results samp').length) {
+			$('#tenet-orcid-results samp').replaceWith(sample);
+		} else {
+			$('#tenet-orcid-results').append(sample);
+		}
+	}
+
+	downloadJSON(event)
+	{
+		event.preventDefault();
+		var a = $('<a style="display: none;"/>');
+		var url = window.URL.createObjectURL(new Blob(["\ufeff", JSON.stringify(this.searchResult, null, 2)], {type: "octet/stream"}));
+		a.attr('href', url);
+		a.attr('download', 'orcid-data-' + (new Date()).toISOString().split('T')[0] +'.json');
+		$("body").append(a);
+		a[0].click();
+		window.URL.revokeObjectURL(url);
+		a.remove()
+	}
+
 	downloadCSV(event)
 	{
 		event.preventDefault();
@@ -38,7 +64,7 @@ class TenetOrcidSearch
 		a.remove()
 	}
 
-	makeCSV(data)
+	makeCSV(data, limit)
 	{
 		var str = ''
 		for (var j in this.fieldnames) {
@@ -46,6 +72,7 @@ class TenetOrcidSearch
 			str += '"' + this.fieldnames[j] + '"';
 		}
 		str += "\r\n";
+		let count = 0;
 		for (const d of data) {
 			var line = '';
 			for (var j in this.fieldnames) {
@@ -56,9 +83,12 @@ class TenetOrcidSearch
 				} else if (o.constructor === Array) {
 					o = o.join(';')
 				}
-				line += '"' + o.replace(/["]/g, "\"$&") + '"';
+				line += '"' + o.replaceAll(/["]/g, "\"$&") + '"';
 			}
 			str += line + "\r\n";
+			if (limit && count++ > limit) {
+				break;
+			}
 		}
 		return str;
 	}
@@ -93,9 +123,8 @@ class TenetOrcidSearch
 			$('#tenet-orcid-results').html('');
 			$('body').append(
 				'<!-- what purpose do throbbers really serve? -->' +
-				'<div id="tenet-orcid-search-throbber" style="z-index:1000;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(200,200,200,0.5);display:flex;justify-content:center;align-items:center;">' +
-				'<img src="//upload.wikimedia.org/wikipedia/commons/d/de/Ajax-loader.gif" style="display:block;width:32px;height:32px;margin:auto">' +
-				'<div style="color:grey;font-size:15px;position:absolute;bottom:180px;left:20px">Seaching for:<br><tt>' + query + '</tt></div>' +
+				'<div id="tenet-orcid-search-throbber">' +
+				'<div>Searching for:<br><tt>' + query + '</tt></div>' +
 				'</div>'
 			)
 		}
@@ -122,8 +151,10 @@ class TenetOrcidSearch
 					this.indexValue.obj.searchQuery = this.indexValue.query;
 					$('#tenet-orcid-search-throbber').remove();
 					$('#tenet-orcid-results').html(
+						'<div class="results-intro">' +
 						'<p>Searched for: <tt>' + this.indexValue.query + '</tt></p>' +
-						'<p>Found ' + this.indexValue.obj.searchResult.length + ' results in ' + this.indexValue.passes + ' passes.</p>'
+						'<p>Found ' + this.indexValue.obj.searchResult.length + ' results in ' + this.indexValue.passes + ' passes.</p>' +
+						'</div>'
 					);
 					this.indexValue.obj.createResultsForm(this.indexValue.obj.searchResult);
 				}
@@ -215,14 +246,17 @@ class TenetOrcidSearch
 			fieldstr += '><label for="result-' + f + '">' + f + '</label></li>';
 		}
 		fieldstr += '</ul>'
-		
+
+		let size = ((new Blob([data])).size / 1000).toFixed(2);
 		$('#tenet-orcid-results').append(
 			'<div class="tenet-orcid-search results-form"><form id="tenet-orcid-results" name="tenet-orcid-results action="">' +
 			'<fieldset name="result-options" id="result-options">' +
 			'<legend>Available fields</legend>' +
 			fieldstr +
 			'</fieldset>' +
-			'<input type="submit" id="results-csv" value="Download">' +
+			'<input type="submit" id="results-preview" value="Preview"><label for="results-preview"></label>' +
+			'<input type="submit" id="results-csv" value="Download as CSV"><label for="results-csv">(~' + size + 'KB)</label>' +
+			'<input type="submit" id="results-json" value="Download as JSON"><label for="results-csv"></label>' +
 			'</form></div>'
 		);
 		for (const f of fields) {
@@ -241,6 +275,8 @@ class TenetOrcidSearch
 			});
 		}
 		$('#tenet-orcid-results #results-csv').on('click', this.downloadCSV.bind(this));
+		$('#tenet-orcid-results #results-json').on('click', this.downloadJSON.bind(this));
+		$('#tenet-orcid-results #results-preview').on('click', this.previewResults.bind(this));
 	}
 
 	/*
@@ -286,8 +322,12 @@ class TenetOrcidSearch
 			'.tenet-orcid-search fieldset { border: 1px solid grey; margin: 0.3em 0; padding: 0.1em 0.3em; }' +
 			'.tenet-orcid-search legend { width: auto; font-size: smaller; font-style: italic; }' +
 			'.tenet-orcid-search.results-form li { list-style: none; display: inline; padding-right: 10px; white-space: nowrap; }' +
+			'.tenet-orcid-search .results-intro { font-size: 75%; }' +
+			'.tenet-orcid-search samp { display: block; font-size: 55%; white-space: pre; line-height: normal; overflow-x: scroll; margin: 1em 0; border: 1px dashed grey; padding:0.25em;}' +
+			'#tenet-orcid-search-throbber { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 9999; background: url("/assets/images/ajax-loader.gif") 50% 50% no-repeat rgba(200,200,200,0.5); }' +
+			'#tenet-orcid-search-throbber div { color: grey; font-size:15px; position: absolute; bottom: 180px; left: 20px; }' +
 			'</style>'
-		)
+		);
 	}
 
 	/**
