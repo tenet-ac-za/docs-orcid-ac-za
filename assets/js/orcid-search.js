@@ -49,11 +49,11 @@ class TenetOrcidSearch
 	{
 		event.preventDefault();
 		var a = $('<a style="display: none;"/>');
-		var csv = '"# ORCID iDs for ' + $("#tenet-orcid-search #affiliation-org-name").val().replaceAll(/["]/g, "\"$&") + "\"\r\n";
+		var csv = '"# ORCID iDs for ' + $("#tenet-orcid-search #affiliation-org-name").val() + "\";\"\"\r\n";
 		if (this.searchQuery) {
-			csv = '# Search: ' + this.searchQuery + "\r\n";
+			csv = '"# Search: ' + this.searchQuery.replaceAll(/["]/g, "\"$&") + "\"\r\n";
 		}
-		csv += '"# Created: ' + (new Date()).toISOString() + "\"\r\n\"#"\r\n";
+		csv += '"# Created: ' + (new Date()).toISOString() + "\"\r\n\"#\"\r\n";
 		csv += this.makeCSV(this.searchResult);
 		var url = window.URL.createObjectURL(new Blob(["\ufeff", csv], {type: "octet/stream"}));
 		a.attr('href', url);
@@ -68,7 +68,7 @@ class TenetOrcidSearch
 	{
 		var str = ''
 		for (var j in this.fieldnames) {
-			if (str != '') { str += ',' }
+			if (str != '') { str += ';' }
 			str += '"' + this.fieldnames[j] + '"';
 		}
 		str += "\r\n";
@@ -76,12 +76,12 @@ class TenetOrcidSearch
 		for (const d of data) {
 			var line = '';
 			for (var j in this.fieldnames) {
-				if (line != '') { line += ',' }
+				if (line != '') { line += ';' }
 				var o = d[this.fieldnames[j]];
 				if (o === null || o === undefined) {
 					o = '';
 				} else if (o.constructor === Array) {
-					o = o.join(';')
+					o = o.join(' / ')
 				}
 				line += '"' + o.replaceAll(/["]/g, "\"$&") + '"';
 			}
