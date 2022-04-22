@@ -338,6 +338,7 @@ class TenetOrcidSearch
 	 */
 	toggleSearchFormChecked()
 	{
+		$('#tenet-orcid-results').html('');
 		let i = (this.institutions).find(o => o.domain == $('#tenet-orcid-search #affiliation-org-name').val() || o.name.toLowerCase() == $('#tenet-orcid-search #affiliation-org-name').val().toLowerCase());
 		if (i) {
 			if(i.hasOwnProperty('alt')) {
