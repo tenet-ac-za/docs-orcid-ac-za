@@ -157,6 +157,9 @@ class TenetOrcidSearch
 						'</div>'
 					);
 					this.indexValue.obj.createResultsForm(this.indexValue.obj.searchResult);
+					$([document.documentElement, document.body]).animate({
+						scrollTop: $("#tenet-orcid-results").offset().top
+					}, 500);
 				}
 			} else {
 				$('#tenet-orcid-search-throbber').remove();
