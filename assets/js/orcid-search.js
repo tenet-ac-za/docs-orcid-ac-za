@@ -93,8 +93,9 @@ class TenetOrcidSearch
 			$('#tenet-orcid-results').html('');
 			$('body').append(
 				'<!-- what purpose do throbbers really serve? -->' +
-				'<div id="tenet-orcid-search-throbber" style="z-index:1000;position:absolute;top:0;left:0;width:100vw;height:100vh;background:rgba(200,200,200,0.5);display:flex;justify-content:center;align-items:center;">' +
+				'<div id="tenet-orcid-search-throbber" style="z-index:1000;position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(200,200,200,0.5);display:flex;justify-content:center;align-items:center;">' +
 				'<img src="//upload.wikimedia.org/wikipedia/commons/d/de/Ajax-loader.gif" style="display:block;width:32px;height:32px;margin:auto">' +
+				'<div style="color:grey;font-size:15px;position:absolute;bottom:180px;left:20px">Seaching for:<br><tt>' + query + '</tt></div>' +
 				'</div>'
 			)
 		}
