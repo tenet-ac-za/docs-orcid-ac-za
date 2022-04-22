@@ -7,7 +7,7 @@
 			"ror": "https://ror.org/01ymz3j33"
 		},
 		"alt" : {
-			"names": [ "TENET" ]
+			"names": [ "TENET", "TENET South Africa" ]
 		}
 	},
 	{
@@ -19,7 +19,8 @@
 			"ror": "https://ror.org/05bk57929"
 		},
 		"alt" : {
-			"names": [ "Universiteit Stellenbosch" ]
+			"names": [ "Universiteit Stellenbosch" ],
+			"domains" : [ "ma2.sun.ac.za", "usb.ac.za" ]
 		}
 	},
 	{
@@ -31,7 +32,8 @@
 			"ror": "https://ror.org/04z6c2n17"
 		},
 		"alt" : {
-			"names": [ "University of Johannesburg" ]
+			"names": [ "University of Johannesburg" ],
+			"domains" : [ "student.uj.ac.za" ]
 		}
 	},
 	{
@@ -56,7 +58,8 @@
 			"ror": "https://ror.org/033z08192"
 		},
 		"alt" : {
-			"names": [ "CUT" ]
+			"names": [ "Central University of Technology, Free State", "CUT" ],
+			"domains": [ "stud.cut.ac.za" ]
 		}
 	},
 	{
@@ -68,7 +71,8 @@
 			"ror": "https://ror.org/0303y7a51"
 		},
 		"alt" : {
-			"names": [ "DUT" ]
+			"names": [ "DUT" ],
+			"domains": [ "dut4life.ac.za" ]
 		}
 	},
 	{
@@ -93,7 +97,7 @@
 		},
 		"alt" : {
 			"names": [ "NWU" ],
-			"domains": [ "nwu.ac.za" ]
+			"domains": [ "g.nwu.ac.za" ]
 		}
 	},
 	{
@@ -105,7 +109,6 @@
 			"ror": "https://ror.org/016sewp10"
 		},
 		"alt" : {
-			"names": [ "Rhodes Unviversity" ],
 			"domains": [ "campus.ru.ac.za" ]
 		}
 	},
@@ -119,7 +122,7 @@
 		},
 		"alt" : {
 			"names": [ "TUT" ],
-			"domains": [ "tut.ac.za" ]
+			"domains" : [ "tut4life.ac.za" ]
 		}
 	},
 	{
@@ -132,7 +135,7 @@
 		},
 		"alt" : {
 			"names": [ "Universiteit Van Kaapstad" ],
-			"domains": [ "uct.ac.za" ]
+			"domains": [ "myuct.ac.za", "alumni.uct.ac.za", "gsb.uct.ac.za", "cs.uct.ac.za", "ast.uct.ac.za", "csag.uct.ac.za" ]
 		}
 	},
 	{
@@ -144,7 +147,7 @@
 		},
 		"alt" : {
 			"names": [ "UKZN" ],
-			"domains": [ "ukzn.ac.za" ]
+			"domains": [ "stu.ukzn.ac.za" ]
 		}
 	},
 	{
@@ -155,9 +158,8 @@
 			"grid": "grid.411732.2",
 			"ror": "https://ror.org/017p87168"
 		},
-		"alt" : {
-			"names": [ "UL" ],
-			"domains": [ "ul.ac.za" ]
+		"alt": {
+			"domains": [ "keyaka.ul.ac.za" ]
 		}
 	},
 	{
@@ -168,9 +170,8 @@
 			"grid": "grid.49697.35",
 			"ror": "https://ror.org/00g0p6g84"
 		},
-		"alt" : {
-			"names": [ "UP" ],
-			"domains": [ "up.ac.za" ]
+		"alt": {
+			"domains" : [ "cs.up.ac.za", "tuks.co.za", "gibs.co.za", "zoology.up.ac.za", "mygibs.co.za" ]
 		}
 	},
 	{
@@ -183,7 +184,7 @@
 		},
 		"alt" : {
 			"names": [ "UNISA" ],
-			"domains": [ "unisa.ac.za" ]
+			"domains": [ "mylife.unisa.ac.za" ]
 		}
 	},
 	{
@@ -194,9 +195,8 @@
 			"grid": "grid.412219.d",
 			"ror": "https://ror.org/009xwd568"
 		},
-		"alt" : {
-			"names": [ "UFS" ],
-			"domains": [ "ufs.ac.za" ]
+		"alt": {
+			"domains": [ "ufs4life.ac.za" ]
 		}
 	},
 	{
@@ -209,7 +209,7 @@
 		},
 		"alt" : {
 			"names": [ "UWC" ],
-			"domains": [ "uwc.ac.za" ]
+			"domains": [ "myuwc.ac.za" ]
 		}
 	},
 	{
@@ -217,12 +217,12 @@
 		"domain": "wits.ac.za",
 		"org-id": {
 			"ringgold": "37707",
-			"grid": "ggrid.11951.3d",
+			"grid": "grid.11951.3d",
 			"ror": "https://ror.org/03rp50x72"
 		},
 		"alt" : {
-			"names": [ "WITS" ],
-			"domains": [ "wits.ac.za" ]
+			"names": [ "Wits" ],
+			"domains": [ "students.wits.ac.za" ]
 		}
 	}
 ]
