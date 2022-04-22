@@ -49,11 +49,11 @@ class TenetOrcidSearch
 	{
 		event.preventDefault();
 		var a = $('<a style="display: none;"/>');
-		var csv = '# ORCID iDs for ' + $("#tenet-orcid-search #affiliation-org-name").val() + "\r\n";
+		var csv = '"# ORCID iDs for ' + $("#tenet-orcid-search #affiliation-org-name").val().replaceAll(/["]/g, "\"$&") + "\"\r\n";
 		if (this.searchQuery) {
 			csv = '# Search: ' + this.searchQuery + "\r\n";
 		}
-		csv += '# Created: ' + (new Date()).toISOString() + "\r\n\#\r\n";
+		csv += '"# Created: ' + (new Date()).toISOString() + "\"\r\n\"#"\r\n";
 		csv += this.makeCSV(this.searchResult);
 		var url = window.URL.createObjectURL(new Blob(["\ufeff", csv], {type: "octet/stream"}));
 		a.attr('href', url);
@@ -258,7 +258,7 @@ class TenetOrcidSearch
 			fieldstr +
 			'</fieldset>' +
 			'<input type="submit" id="results-preview" value="Preview"><label for="results-preview"></label>' +
-			'<input type="submit" id="results-csv" value="Download as CSV"><label for="results-csv">(~' + size + 'KB)</label>' +
+			'<input type="submit" id="results-csv" value="Download as CSV"><label for="results-csv">(~' + size + 'kB)</label>' +
 			'<input type="submit" id="results-json" value="Download as JSON"><label for="results-csv"></label>' +
 			'</form></div>'
 		);
