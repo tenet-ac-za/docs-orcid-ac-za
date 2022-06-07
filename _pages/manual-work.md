@@ -11,7 +11,7 @@ sidebar:
 
 
 
-## Purpose of this guide
+## Adding Work Items
 This guide describes how an organisation's Technical Contact or designated Organisation
 Administrator(s) can write works to ORCID records using the Intembeko ORCID Hub. It describes file
 construction and upload, and editing/updating of records. If your anticipated Hub use differs from the
