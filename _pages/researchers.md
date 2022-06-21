@@ -2,9 +2,6 @@
 layout: single
 permalink: /hub/researchers
 
-
-
-
 sidebar:
   title: "Researchers User Guide"
   nav: sidebar-researchers
@@ -24,5 +21,3 @@ You can follow the links on the left and side of the page to start the process
 The image below demonstrates how Intembeko ORCID hub, your university and the permissions you allow all work together to allow information to be read and written to your ORCID record. 
 
 ![Logo Jekyll]({{site.baseurl}}/assets/images/hublayout.png )
-
-
