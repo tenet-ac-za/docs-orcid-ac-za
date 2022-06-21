@@ -16,14 +16,23 @@ sidebar:
 ### Step 4
 
                  
-Once you you logged into the hub, you will be presented with a screen allowing you to connect your ORCID record.
+Once you have logged into the hub, you will be presented with a screen allowing you to connect your ORCID record.
 ![Logo Jekyll]({{site.baseurl}}/assets/images/linking.png )
    
                 
 ### Step 5 
 
-This will take you to the login ORCID sign in page where you will be asked to give permissions for the Intembeko ORCID hub to read and write information into your ORCID record. It is advised to allow these permissions as gives your university the ability to write affiliated information into the record, but also allows your university to read information set as trust party so that information can reused in university application forms and systems so that you do not have to retype this.   
+This will take you to the login ORCID sign in page where you will be asked to give permissions for the Intembeko ORCID hub to read and write information into your ORCID record. If you have not signed into your orcid record on the computer you are working on you will see the following page:
+![Logo Jekyll]({{site.baseurl}}/assets/images/permsign.png )
+
+Please sign into your ORCID record and you will see the authorise screen mentioned below.
+
+If you have logged into your ORCID record on this computer the ORCID sign in page wont appear and you will see the authorise page.
+
 ![Logo Jekyll]({{site.baseurl}}/assets/images/perm.png )
+
+It is advised to allow these permissions as gives your university the ability to write affiliated information into the record, but also allows your university to read information set as trust party so that information can reused in university application forms and systems so that you do not have to retype this.   
+
 
 ### Step 6
 
