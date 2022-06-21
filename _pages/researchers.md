@@ -20,7 +20,7 @@ To complete this process there are some actions required of you
 
 You can follow the links on the left and side of the page to start the process
 
-3. Additional if you dont have an ORCID record, you will need to create one. There is some screenshots on how to do this as well. This should be done before following steps 1 and 2 above. If you have an ORCID record already, you can skip this step
+3. Additionally if you dont have an ORCID record, you will need to create one. There is some screenshots on how to do this as well. This should be done before following steps 1 and 2 above. If you have an ORCID record already, you can skip this step
 
 The image below demonstrates how Intembeko ORCID hub, your university and the permissions you allow all work together to allow information to be read and written to your ORCID record. 
 
