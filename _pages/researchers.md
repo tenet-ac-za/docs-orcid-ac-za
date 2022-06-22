@@ -11,7 +11,7 @@ This section of the Intembeko ORCID Hub user guide demonstrates how a staff, stu
 
 To complete this process there are some actions required of you:
 
-1. login to Intembeko ORCID Hub with your university credentials.
+1. Login to Intembeko ORCID Hub with your university credentials.
 2. Once logged in, you will need to link your ORCID record to Intembeko.
 
 You can follow the links on the left hand side of the page to start the process.
