@@ -67,8 +67,8 @@ should contact them in advance to let them know that you intend to write works i
 ORCID records. You must explain that they will be receiving an email from the Intembe ORCID
 Hub, and the date on which you intend to upload your file. By doing this, your research community
 will be expecting the Hub’s email and be less likely to delete it as spam.
-To upload ‘works’ file to the Hub log-in and go to
->Tasks >Upload works ...upload your file…>activate all
+To upload ‘affiliations’ file to the Hub log-in and go to
+>Tasks >Upload affiliations ...upload your file…>activate all
 This will either
 * send an invitation to those people whose ORCID records you wish to write to OR
 * if the researchers have already given your organisation permission to act on their ORCID records, the
