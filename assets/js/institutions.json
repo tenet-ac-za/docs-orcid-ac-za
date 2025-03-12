@@ -1,13 +1,23 @@
-[
+        {
+                "name": "Tertiary Education & Research Network of South Africa",
+                "domain": "tenet.ac.za",
+                "org-id": {
+                        "grid": "grid.507493.c",
+                        "ror": "https://ror.org/01ymz3j33"
+                },
+                "alt" : {
+                        "names": [ "TENET", "TENET South Africa" ]
+                }
+        },
 	{
-		"name": "Tertiary Education & Research Network of South Africa",
-		"domain": "tenet.ac.za",
+		"name": "University of Fort Hare",
+		"domain": "ufh.ac.za",
 		"org-id": {
-			"grid": "grid.507493.c",
-			"ror": "https://ror.org/01ymz3j33"
+			"grid": "grid.413110.6",
+			"ror": "https://ror.org/0184vwv17"
 		},
 		"alt" : {
-			"names": [ "TENET", "TENET South Africa" ]
+			"names": [ "UFH" ]
 		}
 	},
 	{
