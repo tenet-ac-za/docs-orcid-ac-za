@@ -1,9 +1,2 @@
-body {
-  background-color: powderblue;
-}
-h1 {
-  color: blue;
-}
-p {
-  color: red;
-}
+/* Keep this legacy path aligned with the main site stylesheet. */
+@import url("/css/site.css");
