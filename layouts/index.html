@@ -1,0 +1,17 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.excerpt }}</p>
+  </div>
+</section>
+<section class="cards">
+  {{ range .Params.feature_row }}
+    <article class="card">
+      <h2>{{ .title }}</h2>
+      <p>{{ .excerpt }}</p>
+      <a class="button" href="{{ .url }}">{{ .btn_label }}</a>
+    </article>
+  {{ end }}
+</section>
+{{ end }}

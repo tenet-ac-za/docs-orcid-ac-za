@@ -1,0 +1,15 @@
+baseURL: "https://docs.orcid.ac.za/"
+languageCode: "en-us"
+title: "South African ORCID Consortium"
+disableKinds:
+  - taxonomy
+  - term
+params:
+  description: "Documentation from the South African ORCID Consortium"
+  logo: "/assets/images/tenet.svg"
+menus:
+  main: []
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

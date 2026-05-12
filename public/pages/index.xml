@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on South African ORCID Consortium</title>
+    <link>http://localhost:1313/pages/</link>
+    <description>Recent content in Pages on South African ORCID Consortium</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/hub/manual/writing_affiliation_items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/writing_affiliation_items/</guid>
+      <description>&lt;h1 id=&#34;adding-affiliations&#34;&gt;Adding affiliations&lt;/h1&gt;&#xA;&lt;h2 id=&#34;affiliations-allowed-in-orcid-records&#34;&gt;Affiliations allowed in ORCID records&lt;/h2&gt;&#xA;&lt;p&gt;The Hub allows all affiliations recognised by ORCIDâ€™s API 3.0 to be written to ORCID&#xA;records:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Employment&lt;/strong&gt;: Formal employment relationship with an organization, e.g. staff, intern, researcher, contractor.&#xA;Employment can be paid or unpaid.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Education&lt;/strong&gt;: Participation in an academic higher education program to receive an undergraduate, graduate, or&#xA;other degree, may be in progress or unfinished.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Qualification&lt;/strong&gt;: Participation in a professional or vocational accreditation, certification, or training program, may&#xA;be in progress or unfinished.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hub</title>
+      <link>http://localhost:1313/hub/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/</guid>
+      <description>&lt;p&gt;(Draft)&#xA;_NB: This is a working document and information on the page is being updated regularly. Expect some errors while we are updating this page.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/saorcidhub-300x300.png&#34; alt=&#34;Intembeko Logo&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;This section is meant as a simple user guide for the &lt;em&gt;&lt;a href=&#34;https://intembeko.orcid.ac.za&#34;&gt;Intembeko ORCID Hub&lt;/a&gt;&lt;/em&gt;.&#xA;The user documentation is split into 2 user types depending on the role you play at your institution.&lt;/p&gt;&#xA;&lt;p&gt;Please select the user type below that best describes you.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a class=&#34;button&#34; href=&#34;http://localhost:1313/hub/researchers&#34;&gt;Researchers&lt;/a&gt;&#xA;&lt;a class=&#34;button&#34; href=&#34;http://localhost:1313/hub/institutions&#34;&gt;Institution-admins&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Institutions</title>
+      <link>http://localhost:1313/hub/institutions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/institutions/</guid>
+      <description>&lt;p&gt;This is the instutional admin section for the Intembeko ORCID hub.&lt;/p&gt;&#xA;&lt;p&gt;Prior to using the Intembeko ORCID Hub, your organisation must be onboarded to the application.&#xA;Onboarding involves being authenticated in&#xA;the Hub, using the Hub to obtain API credentials for your organisation from ORCID, and entering&#xA;these into the Hub.&lt;/p&gt;&#xA;&lt;p&gt;As part of the onboarding process, your organisation will be enrolled to use the Intenbeko ORCID hub sandbox environment, where you can test and use the features of Intembeko without making changes to real ORCID records. The Intembeko ORCID hub sandbox environment talks to the ORCID sandbox environment. To do any testing, you and the people you are testing with will need to create a test ORCID record by going to the &lt;a href=&#34;https://sandbox.orcid.org/signin&#34;&gt;ORCID sandbox website.&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Institutions Writing</title>
+      <link>http://localhost:1313/hub/institutions/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/institutions/writing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Login</title>
+      <link>http://localhost:1313/login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/login/</guid>
+      <description>&lt;p&gt;test test test&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual</title>
+      <link>http://localhost:1313/hub/manual/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/</guid>
+      <description>&lt;p&gt;Purpose of this guide&#xA;This guide describes how an organisationâ€™s Technical Contact or designated Organisation&#xA;Administrator(s) can write affiliation information to ORCID records using the Intembeko ORCID Hub.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/hublayout.png&#34; alt=&#34;Logo Jekyll&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual Collect</title>
+      <link>http://localhost:1313/hub/manual/collect/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/collect/</guid>
+      <description>&lt;p&gt;collecting ORCID records for re-use and reporting&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual Funding</title>
+      <link>http://localhost:1313/hub/manual/writing_funding_items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/writing_funding_items/</guid>
+      <description>&lt;p&gt;adding funding to researchers / staff / members&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual Orcidapi</title>
+      <link>http://localhost:1313/hub/manual/orcidapi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/orcidapi/</guid>
+      <description>&lt;p&gt;Adding your institution api keys&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual Peer</title>
+      <link>http://localhost:1313/hub/manual/writing_peer_review_items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/writing_peer_review_items/</guid>
+      <description>&lt;p&gt;adding rich affiliation to researchers / staff / members&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Manual Work</title>
+      <link>http://localhost:1313/hub/manual/writing_work_items/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/manual/writing_work_items/</guid>
+      <description>&lt;h2 id=&#34;adding-work-items&#34;&gt;Adding Work Items&lt;/h2&gt;&#xA;&lt;p&gt;This guide describes how an organisation&amp;rsquo;s Technical Contact or designated Organisation&#xA;Administrator(s) can write works to ORCID records using the Intembeko ORCID Hub. It describes file&#xA;construction and upload, and editing/updating of records. If your anticipated Hub use differs from the&#xA;scenarios in the guide please contact us for assistance.&#xA;Prior to using the Intembeko ORCID Hub, your organisation must be onboarded to the application. If&#xA;your organisation is not listed on the Hub&amp;rsquo;s home page, your organisation&amp;rsquo;s ORCID Technical Contact&#xA;should request an invitation to onboard. Onboarding involves being authenticated in the Hub, using&#xA;the Hub to obtain API credentials for your organisation from ORCID, and entering these into the Hub.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Members</title>
+      <link>http://localhost:1313/hub/members/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/members/</guid>
+      <description>&lt;p&gt;The following institutions are using the hub&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/assets/images/tenet.png&#34; alt=&#34;TENET Logo&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Public ORCID Search</title>
+      <link>http://localhost:1313/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/search/</guid>
+      <description>&lt;div id=&#34;tenet-orcid&#34;&gt;&#xA;&lt;p&gt;load here&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;script src=&#34;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js&#34; integrity=&#34;sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==&#34; crossorigin=&#34;anonymous&#34; referrerpolicy=&#34;no-referrer&#34;&gt;&lt;/script&gt;&#xA;&lt;script src=&#34;http://localhost:1313/assets/js/orcid-search.js&#34;&gt;&lt;/script&gt;</description>
+    </item>
+    <item>
+      <title>Researchers</title>
+      <link>http://localhost:1313/hub/researchers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/researchers/</guid>
+      <description>&lt;p&gt;This section of the Intembeko ORCID Hub user guide demonstrates how a staff, student or researcher can connect their ORCID record to Intembeko and thus allowing your university to read and write information to your ORCID record.&lt;/p&gt;&#xA;&lt;p&gt;To complete this process there are some actions required of you:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Login to Intembeko ORCID Hub with your university credentials.&lt;/li&gt;&#xA;&lt;li&gt;Once logged in, you will need to link your ORCID record to Intembeko.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;You can follow the links on the left hand side of the page to start the process.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Researchers Linking</title>
+      <link>http://localhost:1313/hub/researchers/linking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/researchers/linking/</guid>
+      <description>&lt;h2 id=&#34;linking-your-orcid-record&#34;&gt;Linking your ORCID record&lt;/h2&gt;&#xA;&lt;h3 id=&#34;step-4&#34;&gt;Step 4&lt;/h3&gt;&#xA;&lt;p&gt;Once you have logged into the hub, you will be presented with a screen allowing you to connect your ORCID record.&#xA;&lt;img src=&#34;http://localhost:1313/assets/images/linking.png&#34; alt=&#34;Logo Jekyll&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-5&#34;&gt;Step 5&lt;/h3&gt;&#xA;&lt;p&gt;This will take you to the login ORCID sign in page where you will be asked to give permissions for the Intembeko ORCID hub to read and write information into your ORCID record. If you have not signed into your orcid record on the computer you are working on you will see the following page:&#xA;&lt;img src=&#34;http://localhost:1313/assets/images/permsign.png&#34; alt=&#34;Logo Jekyll&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Researchers Login</title>
+      <link>http://localhost:1313/hub/researchers/login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/hub/researchers/login/</guid>
+      <description>&lt;h2 id=&#34;login-to-the-intembeko-orcid-hub&#34;&gt;Login to the Intembeko ORCID hub&lt;/h2&gt;&#xA;&lt;p&gt;The hub requires you to login so that it can identify which institution who are associated with. It also writes some of the information collected via the login process to your ORCID record.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-1&#34;&gt;Step 1&lt;/h3&gt;&#xA;&lt;p&gt;To start click on the &lt;img src=&#34;http://localhost:1313/assets/images/login.png&#34; alt=&#34;Logo Jekyll&#34;&gt;  button in the top right had corner.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-2&#34;&gt;Step 2&lt;/h3&gt;&#xA;&lt;p&gt;Search for your institution in the search box .Your institution will be remembered on subsiquent visits, if you using the same device. It will not be remembered if you cleared your browser cache or using a new device.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Technical</title>
+      <link>http://localhost:1313/techincal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/techincal/</guid>
+      <description>&lt;p&gt;(Draft)&lt;/p&gt;&#xA;&lt;p&gt;Template for technical docs&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Workshop2024</title>
+      <link>http://localhost:1313/workshop2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/workshop2024/</guid>
+      <description>&lt;p&gt;Workshop notes&lt;/p&gt;&#xA;&lt;p&gt;Practical session&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Background&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Discuss the following as a group&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Institutional Role Players&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Discuss various Research Report requests from university departments&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What tools, software, or platforms are you getting the various reports from?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Are there any problems with the tools mentioned above?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;What information would you like from an ORCID record?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;In what ways could ORCID make reporting easier?&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manual Work | South African ORCID Consortium</title>
+  <meta name="description" content="Documentation from the South African ORCID Consortium">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  <header class="site-header">
+  <a class="brand" href="/">
+    <img src="/assets/images/tenet.svg" alt="Logo">
+    <span>South African ORCID Consortium</span>
+  </a>
+</header>
+
+  <main class="page-wrap">
+    
+<section class="content-shell">
+  
+    <aside class="sidebar">
+      
+
+
+  
+    <section class="sidebar-group">
+      <h3>Hub manual</h3>
+      <ul>
+        
+          <li><a href="/hub/manual/writing_affiliation_items">Writing Affiliation Items</a></li>
+        
+          <li><a href="/hub/manual/writing_funding_items">Writing Funding items</a></li>
+        
+          <li><a href="/hub/manual/writing_work_items">Writing work items</a></li>
+        
+          <li><a href="/hub/manual/writing_peer_review_items">Writing peer review items</a></li>
+        
+      </ul>
+    </section>
+  
+
+
+    </aside>
+  
+  <article class="content ">
+    <h1>Manual Work</h1>
+    <h2 id="adding-work-items">Adding Work Items</h2>
+<p>This guide describes how an organisation&rsquo;s Technical Contact or designated Organisation
+Administrator(s) can write works to ORCID records using the Intembeko ORCID Hub. It describes file
+construction and upload, and editing/updating of records. If your anticipated Hub use differs from the
+scenarios in the guide please contact us for assistance.
+Prior to using the Intembeko ORCID Hub, your organisation must be onboarded to the application. If
+your organisation is not listed on the Hub&rsquo;s home page, your organisation&rsquo;s ORCID Technical Contact
+should request an invitation to onboard. Onboarding involves being authenticated in the Hub, using
+the Hub to obtain API credentials for your organisation from ORCID, and entering these into the Hub.</p>
+<h2 id="types-of-works-allowed-in-orcid-records">Types of works allowed in ORCID records</h2>
+<p>â€™Worksâ€™ is the generic term used by ORCID to describe research outputs. A large range of outputs is
+recognised and listed by ORCID here.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Field</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Invitee first name (required)</td>
+          <td>Person to whose ORCID record you are writing</td>
+      </tr>
+      <tr>
+          <td>Invitee last name (required)</td>
+          <td>Person to whose ORCID record you are writing</td>
+      </tr>
+      <tr>
+          <td>Invitee email address (required)</td>
+          <td>Person to whose ORCID record you are writing</td>
+      </tr>
+      <tr>
+          <td>Invitee local identifier</td>
+          <td>A local identifier â€“ e.g. one used by your internal system.</td>
+      </tr>
+      <tr>
+          <td>Title (required)</td>
+          <td>The title of the work</td>
+      </tr>
+      <tr>
+          <td>Subtitle</td>
+          <td>The subtitle, if relevant</td>
+      </tr>
+      <tr>
+          <td>Translated title</td>
+          <td>The title as translated, if relevant</td>
+      </tr>
+      <tr>
+          <td>Translated title language</td>
+          <td>Language of the translated title</td>
+      </tr>
+      <tr>
+          <td>Journal title</td>
+          <td>This is the title of the main body that the work is a part of â€“ can be journal title, book title, conference title etc. Note that ALL variations are captured under the term â€˜journal titleâ€™; do NOT change the name of this header.</td>
+      </tr>
+      <tr>
+          <td>Type (required)</td>
+          <td>The type of work â€“ for example: journal-article; book-chapter. Must be one of ORCIDâ€™s accepted types found in <a href="https://members.orcid.org/api/resources/worktypes">https://members.orcid.org/api/resources/worktypes</a></td>
+      </tr>
+      <tr>
+          <td>Publication date</td>
+          <td>Year, year and month, or year, month and date</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>A short abstract or description of the work. ORCID recommends keeping this below 200 words as this data is not always read by systems that connect with ORCID.</td>
+      </tr>
+      <tr>
+          <td>Citation type</td>
+          <td>Citations may be fielded as in RIS, BibTex (preferred by ORCID) â€“ or may be textual (APA, MLA, Chicago)</td>
+      </tr>
+      <tr>
+          <td>Citation</td>
+          <td>The content of the citation in one of the formats allowed, e.g. BibTex</td>
+      </tr>
+      <tr>
+          <td>URL</td>
+          <td>An external link to the work</td>
+      </tr>
+      <tr>
+          <td>Language</td>
+          <td>Language used in the work</td>
+      </tr>
+      <tr>
+          <td>Country</td>
+          <td>Country of publication</td>
+      </tr>
+      <tr>
+          <td>External ID Type (required)</td>
+          <td>The external ID type of the work; for example a DOI, ISBN etc. Must be one of ORCIDâ€™s accepted identifiers found in <a href="https://pub.orcid.org/v2.0/identifiers">https://pub.orcid.org/v2.0/identifiers</a> . If you are unable to assign a DOI or ISBN you can use â€˜source-work-idâ€™.</td>
+      </tr>
+      <tr>
+          <td>External ID relationship (required)</td>
+          <td>(json or yaml file must be used if more than one external relationship identifier is included) SELF (e.g. if your â€˜external ID typeâ€™ is, for example, a DOI for a journal article). You can also have a PART_OF identifier relationship such as the ISSN of the journal in which the article ispublished). A SELF identifier is mandatory.</td>
+      </tr>
+      <tr>
+          <td>External iD Value (required)</td>
+          <td>This is the identifier value, i.e. the ISBN of a book or the DOI of an article, or your internal sourcework-id.</td>
+      </tr>
+      <tr>
+          <td>Identifier URL (external ID URL)</td>
+          <td>The url that an identifier resolves to. ORCID will auto-populate if an identifier type is recognised.</td>
+      </tr>
+      <tr>
+          <td>Contributors (json or yaml file only, if more than one contributor to be included)</td>
+          <td>Describes the role of the contributor. Can be: author / assignee / editor / chair-or-translator / co-investigator / co-inventor / graduate-student / other-inventor / principal-investigator / postdoctoral-researcher / support-staff(Hyphens are essential)</td>
+      </tr>
+      <tr>
+          <td>Contributor-sequence</td>
+          <td>Can be â€˜firstâ€™ or â€˜additionalâ€™ only</td>
+      </tr>
+      <tr>
+          <td>PUT code</td>
+          <td>Use the PUT-Code if you wish to update an item. The code can be obtained by exporting the task from the Hub once the entry is written to the ORCID record. By writing information using a PUT code the row of information in your fileoverwrites the specified item in the userâ€™s ORCID record rather than creating a new entry.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="using-the-hub-to-write-works-to-orcid-records">Using the Hub to write works to ORCID records</h2>
+<p>Uploading files and activating them in the Hub generates email to your researchers and
+contributors, inviting them to give your organisation permission to access their ORCID
+record.</p>
+<h2 id="uploading-files-to-the-hub">Uploading files to the Hub</h2>
+<p>If the researcher(s) have not already given you permission to read from/write to their ORCID records,
+perhaps from you writing an affiliation entry to their record, then prior to uploading and activating
+your file in the Hub, and according to your organisationâ€™s normal communications procedures, you
+should contact them in advance to let them know that you intend to write works information to their
+ORCID records. You must explain that they will be receiving an email from the Intembe ORCID
+Hub, and the date on which you intend to upload your file. By doing this, your research community
+will be expecting the Hubâ€™s email and be less likely to delete it as spam.
+To upload â€˜worksâ€™ file to the Hub log-in and go to</p>
+<blockquote>
+<p>Tasks &gt;Upload works &hellip;upload your fileâ€¦&gt;activate all
+This will either</p>
+</blockquote>
+<ul>
+<li>send an invitation to those people whose ORCID records you wish to write to (Figure 5) OR</li>
+<li>if the researchers have already given your organisation permission to act on their ORCID records, the
+works record will immediately be written, with your organisation as the source of the information.</li>
+</ul>
+<h2 id="editing-records-using-the-hubâs-web-form-feature">Editing records using the Hubâ€™s web-form feature</h2>
+<p>You can edit information written to ORCID records in the Hub directly using the web-form features.
+Any information can be edited while the task is still active, but some edits can also be made after the
+task has expired.
+If the task is still active in the Hub, navigate to it via <Tasks>, <Uploaded Tasks> then click on the eye
+icon to view the items. Choose the item you wish to edit and click on the icon that represents that
+information e.g. invitees, contributors, external identifiers. Once you have edited the information you
+must â€˜resetâ€™ the task for the edits to appear in the records. If adding new invitees, these people will
+receive an invitation email as described previously.
+If the task has expired you can still edit some information in ORCID records about the work item,
+including url, identifiers and information about the work itself, although not contributors. Go to <Your
+People>, &lt;view/export people&gt; and search for the person whose information you want to edit. Hover
+over the pencil icon on the left and a suite of icons will appear/ Click on the typewriter icon to edit
+works information. When the information appears on screen, click on the pencil icon on the left to
+edit the information.</p>
+
+  </article>
+</section>
+
+  </main>
+  <footer class="site-footer">
+  <p>South African ORCID Consortium documentation.</p>
+</footer>
+
+</body>
+</html>

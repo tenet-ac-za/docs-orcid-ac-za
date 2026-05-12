@@ -1,0 +1,14 @@
+{{ $key := .Params.sidebar_nav }}
+{{ $group := index site.Data.navigation $key }}
+{{ if $group }}
+  {{ range $group }}
+    <section class="sidebar-group">
+      <h3>{{ .title }}</h3>
+      <ul>
+        {{ range .children }}
+          <li><a href="{{ .url }}">{{ .title }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  {{ end }}
+{{ end }}

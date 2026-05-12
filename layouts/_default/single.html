@@ -1,0 +1,13 @@
+{{ define "main" }}
+<section class="content-shell">
+  {{ if .Params.sidebar_nav }}
+    <aside class="sidebar">
+      {{ partial "sidebar.html" . }}
+    </aside>
+  {{ end }}
+  <article class="content {{ if not .Params.sidebar_nav }}content-full{{ end }}">
+    {{ if ne .Title "" }}<h1>{{ .Title }}</h1>{{ end }}
+    {{ .Content }}
+  </article>
+</section>
+{{ end }}
