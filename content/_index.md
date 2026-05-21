@@ -10,8 +10,8 @@ feature_row:
     excerpt: "ORCID API integration examples and reference material."
     url: "https://info.orcid.org/documentation/api-tutorials/api-tutorial-read-data-on-a-record/"
     btn_label: "Learn more"
-  - title: "ORCID 101"
-    excerpt: "ORCID tutorials"
-    url: "https://info.orcid.org/video-tutorials/"
-    btn_label: "Learn more"
+  - title: "ORCID Course for Librarians"
+    excerpt: "A structured course designed to help librarians understand and support ORCID adoption in their institutions."
+    url: "/orcid-course-librarians/"
+    btn_label: "Start course"
 ---
