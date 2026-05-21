@@ -7,7 +7,7 @@
   <meta name="description" content="{{ site.Params.description }}">
   <link rel="stylesheet" href="/css/site.css">
 </head>
-<body>
+<body{{ with .Params.page_body_class }} class="{{ . }}"{{ end }}>
   {{ partial "header.html" . }}
   <main class="page-wrap">
     {{ block "main" . }}{{ end }}

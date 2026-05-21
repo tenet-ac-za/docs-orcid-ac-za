@@ -1,12 +1,14 @@
 {{ $key := .Params.sidebar_nav }}
 {{ $group := index site.Data.navigation $key }}
 {{ if $group }}
+  {{ $current := replaceRE "/$" "" .RelPermalink }}
   {{ range $group }}
     <section class="sidebar-group">
       <h3>{{ .title }}</h3>
       <ul>
         {{ range .children }}
-          <li><a href="{{ .url }}">{{ .title }}</a></li>
+          {{ $item := replaceRE "/$" "" (.url | relURL) }}
+          <li><a class="{{ if eq $current $item }}is-active{{ end }}" href="{{ .url }}">{{ .title }}</a></li>
         {{ end }}
       </ul>
     </section>

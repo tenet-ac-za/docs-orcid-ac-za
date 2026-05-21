@@ -5,7 +5,7 @@
       {{ partial "sidebar.html" . }}
     </aside>
   {{ end }}
-  <article class="content {{ if not .Params.sidebar_nav }}content-full{{ end }}">
+  <article class="content {{ if or (not .Params.sidebar_nav) .Params.content_full_width }}content-full{{ end }}{{ with .Params.page_class }} {{ . }}{{ end }}">
     {{ if ne .Title "" }}<h1>{{ .Title }}</h1>{{ end }}
     {{ .Content }}
   </article>
